@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Pliant", "Inter", sans-serif;
@@ -148,7 +152,7 @@ body {
 
 .contact-links a {
     text-decoration: none;
-    color: #3B82F6;
+    color: #D4933A;
 
     transition: color 0.2s ease;
 }
@@ -190,10 +194,67 @@ body {
 
 .resume-btn {
     border: 1px solid #374151;
-    background-color: #3B82F6;
+    background-color: #D4933A;
     color: #F9FAFB;
 }
 
 .resume-btn:hover {
     background-color: #1F2937;
+}
+
+#projects-title{
+    color: #F9FAFB;
+    text-align: center;
+}
+
+.projects-subtitle{
+    color: #9CA3AF;
+
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.projects{
+    margin: 20px;
+}
+
+.project-container{
+    min-height: 400px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 2rem;
+
+    padding: 2rem;
+
+    background-color: #1F2937;
+
+    border-radius: 15px;
+}
+
+.project-card{
+    width: 320px;
+
+    background-color: #111827;
+
+    border: 1px solid #374151;
+
+    border-radius: 15px;
+
+    padding: 1.5rem;
+
+    text-align: center;
+}
+
+.project-card h3{
+    color: #F9FAFB;
+}
+
+.project-card p{
+    color: #D1D5DB;
+    line-height: 1.6;
 }
