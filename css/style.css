@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Pliant;
+    src: url("../assets/fonts/Pliant-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: inter;
+    src: url("../assets/fonts/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Pliant", "inter", sans-serif;
+}
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #111827;
+
+    padding: 1rem 3rem;
+}
+
+#name {
+    color: #F9FAFB;
+    font-weight: 600;
+}
+
+#menuItem {
+    display: flex;
+    gap: 1rem;
+}
+
+.navItem {
+    color: #F9FAFB;
+}
+
+#menuItem a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #F9FAFB;
+
+    padding: 0.75rem 1rem;
+
+    border-radius: 15px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+#menuItem a:hover {
+    background-color: #1F2937;
+
+    transform: translateY(-2px);
+}
+
+#contact{
+}
